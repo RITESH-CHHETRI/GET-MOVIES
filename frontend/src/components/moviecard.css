@@ -1,0 +1,69 @@
+/* moviecard.css */
+
+.movie-card {
+  position: relative; /* Add position relative to parent for absolute positioning */
+  border: 0px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 90%;
+  height: auto;
+}
+
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.movie-card .movie-info {
+  padding: 10px;
+  text-align: left;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card .year{
+  font-family: 'DM Sans';
+  color: #757575;
+}
+.movie-card .title {
+  font-family: 'DM Sans';
+  font-size: 1.2rem;
+  color: #111827;
+}
+.movie-card .genre{
+  font-family: 'DM Sans';
+  color: #757575;
+}
+
+
+
+.favorite-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  background-color: white; /* Pink background */
+  width: 18px;
+  height: 18px;
+  border-radius: 50%; /* Make it a circle */
+  padding: 8px; /* Adjust padding to center the icon */
+  color: #f04438; /* White icon color */
+}
+
+.nonfavorite-icon {
+  background-color: rgb(255,255,255,0.5); /* Pink background */
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%; /* Make it a circle */
+  padding: 8px; /* Adjust padding to center the icon */
+  color: white;
+}
